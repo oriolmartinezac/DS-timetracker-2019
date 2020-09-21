@@ -1,0 +1,157 @@
+<!-- Coded by team -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout"
+    android:background="#f7f7f7">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/taskConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checkedButton="@id/projectButton"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            tools:ignore="UselessParent">
+
+            <RadioButton
+                android:id="@+id/projectButton"
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+
+                android:text="@string/project"
+                android:textColorHint="@color/colorTabNavigationSelected"
+                android:textColorLink="#00FF4E4E" />
+
+            <RadioButton
+                android:id="@+id/taskButton"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/task"
+                android:textColorLink="@color/colorTabNavigationSelected" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="411dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/descInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/description"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/task_configuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:clickable="false"
+                android:text="@string/task_configuration"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                tools:ignore="UselessParent">
+
+                <CheckBox
+                    android:id="@+id/limitedTask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/limited_task"
+                    tools:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/progTask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/automatic_task"
+                    tools:visibility="gone" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Duration"
+                android:inputType="number"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Start in"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/create"
+            android:textAlignment="center" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TimeTracker</string>
+
+    <!-- Tab navigation -->
+    <string name="tabProject">Projects</string>
+    <string name="tabTask">Tasks</string>
+
+    <!-- Tree view-->
+    <string name="treeHome">Home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_activity">Create Activity</string>
+    <string name="project">Project</string>
+    <string name="task">Task</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="create">Create</string>
+    <string name="task_configuration">Task Configuration</string>
+    <string name="limited_task">Limited Task</string>
+    <string name="automatic_task">Automatic Task</string>
+
+</resources>
